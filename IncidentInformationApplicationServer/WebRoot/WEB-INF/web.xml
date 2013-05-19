@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.LoginCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LogoutCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.LogoutCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DispatcherServlet</servlet-name>
+		<servlet-class>sad.group3.controller.DispatcherServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>IncidentCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.IncidentCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ArresteeCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.ArresteeCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>NarrativeCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.NarrativeCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>MessageCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.MessageCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChargeCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.ChargeCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LatestIncCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.LatestIncCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChartCLServlet</servlet-name>
+		<servlet-class>sad.group3.controller.ChartCLServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DisplayChart</servlet-name>
+		<servlet-class>org.jfree.chart.servlet.DisplayChart</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TaskCLServlet</servlet-name>
+    <servlet-class>sad.group3.controller.TaskCLServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>DisplayChart</servlet-name>
+		<url-pattern> /DisplayChart </url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginCLServlet</servlet-name>
+		<url-pattern>/LoginCLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutCLServlet</servlet-name>
+		<url-pattern>/LogoutCLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DispatcherServlet</servlet-name>
+		<url-pattern>/DispatcherServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IncidentCLServlet</servlet-name>
+		<url-pattern>/IncidentCLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ArresteeCLServlet</servlet-name>
+		<url-pattern>/ArresteeCLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NarrativeCLServlet</servlet-name>
+		<url-pattern>/NarrativeCLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MessageCLServlet</servlet-name>
+		<url-pattern>/MessageCLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChargeCLServlet</servlet-name>
+		<url-pattern>/ChargeCLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LatestIncCLServlet</servlet-name>
+		<url-pattern>/LatestIncCLServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChartCLServlet</servlet-name>
+		<url-pattern>/ChartCLServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TaskCLServlet</servlet-name>
+    <url-pattern>/TaskCLServlet</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<session-config>
+		<session-timeout>1</session-timeout>
+	</session-config>
+
+</web-app>
